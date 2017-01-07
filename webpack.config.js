@@ -69,7 +69,7 @@ module.exports = {
             { test: /\.scss/, loader: 'style!css?sourceMap!sass?sourceMap' },
 
             // Image loader
-            { test: /\.(jpe*g|png|gif)$/, loader: 'file?name=assets/images/[hash].[ext]' }
+            { test: /\.(jpe*g|png|gif|ico)$/, loader: 'file?name=assets/images/[hash].[ext]' }
         ]
     },
     sassLoader: {
