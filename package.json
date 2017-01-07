@@ -6,8 +6,7 @@
   "license": "MIT",
   "homepage": "https://github.com/cvgellhorn/webpack-boilerplate",
   "scripts": {
-    "heroku-postbuild": "webpack -p --config ./webpack.config.build.js --progress",
-    "start": "NODE_ENV=production webpack -p --config webpack.config.build.js",	
+    "postinstall": "webpack -p --config ./webpack.config.build.js --progress",
     "dev": "NODE_ENV=dev webpack-dev-server --inline --progress --config webpack.config.dev.js",
     "build": "NODE_ENV=production webpack -p --config webpack.config.build.js"
   },
