@@ -5,14 +5,14 @@ var express = require('express');
 var app = express();
 
 // Serve static files from dist directory
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(__dirname));
 
 // Set port to given ENV or default 5000
 app.set('port', (process.env.PORT || 5000));
 
 // Serve index file on default request
 app.get('/', function(req, res) {
-    res.sendFile('index.html'));
+    res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
 // Start listening
