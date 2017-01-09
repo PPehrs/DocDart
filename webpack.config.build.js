@@ -10,11 +10,11 @@ webpackConfig.plugins.push(
 );
 
 // Copy files from assets/images to dist/assets/images
-webpackConfig.plugins.push(
-    new CopyWebpackPlugin([
-        { from: 'assets/images', to: 'assets/images' }
-    ])
-);
+//webpackConfig.plugins.push(
+//    new CopyWebpackPlugin([
+//        { from: 'assets/images', to: 'assets/images' }
+//    ])
+//);
 
 webpackConfig.output = {
     path: path.join(__dirname, 'dist'),
