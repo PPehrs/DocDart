@@ -41,7 +41,6 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin('vendor', '[name].[hash].js'),
 
         new HtmlWebpackPlugin({
-            favicon: 'assets/images/favicon.ico',
             template: path.join(__dirname, 'index.ejs'),
             filename: 'index.html',
             inject: true
